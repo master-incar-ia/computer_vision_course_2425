@@ -5,10 +5,13 @@ import matplotlib.pyplot as plt
 import numpy as np
 import skimage, skimage.io
 from src.exercise_01.t01_load_image import visualizar_imagen
+from pathlib import Path
 
-file_img_01 = "../data/color/barrio_sesamo.jpg"
-file_img_02 = "../data/color/espinete.jpg"
+file_img_01 = "./data/color/barrio_sesamo.jpg"
+file_img_02 = "./data/color/espinete.jpg"
 
+output_folder = Path(__file__).parent.parent.parent / "outs" / Path(__file__).parent.name
+output_folder.mkdir(exist_ok=True, parents=True)
 
 def integrar_a_espinete():
     img_grupo = skimage.io.imread(file_img_01)

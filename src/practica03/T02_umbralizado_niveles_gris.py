@@ -11,18 +11,22 @@ import skimage.io
 from skimage.filters import threshold_local, threshold_otsu
 
 from src.exercise_01.t01_load_image import visualizar_imagen
+from pathlib import Path
 
-file_histo = "../data/histograma/cerebro_1.jpg"
-file_thres = "../data/histograma/bookpage.jpg"
-file_7seg = "../data/histograma/Segmentos7.jpg"
+output_folder = Path(__file__).parent.parent.parent / "outs" / Path(__file__).parent.name
+output_folder.mkdir(exist_ok=True, parents=True)
 
-file_mariposa = "../data/morfologicos/mariposa.jpg"
-file_mariposa_noisy = "../data/morfologicos/mariposa_noisy.jpg"
+file_histo = "./data/histograma/cerebro_1.jpg"
+file_thres = "./data/histograma/bookpage.jpg"
+file_7seg = "./data/histograma/Segmentos7.jpg"
 
-file_sudoku = "../data/morfologicos/sudoku.jpg"
-file_windows = "../data/morfologicos/windows.jpg"
+file_mariposa = "./data/morfologicos/mariposa.jpg"
+file_mariposa_noisy = "./data/morfologicos/mariposa_noisy.jpg"
 
-file_bodegon = "../data/color/bodegon.png"
+file_sudoku = "./data/morfologicos/sudoku.jpg"
+file_windows = "./data/morfologicos/windows.jpg"
+
+file_bodegon = "./data/color/bodegon.png"
 
 
 def do_test05():

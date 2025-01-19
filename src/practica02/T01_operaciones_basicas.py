@@ -14,10 +14,10 @@ from src.exercise_01.t01_load_image import visualizar_imagen
 TODO: Elige una imagen para usar
 """
 file_img_elegida_estudiante = ""
-file_img_01 = "../data/underwater/Ancuti01.png"
-file_img_02 = "../data/underwater/Ancuti03.png"
-file_logo = "../data/mascaras/logo_ehu.png"
-file_base = "../data/mascaras/orto.jpg"
+file_img_01 = "./data/underwater/Ancuti01.png"
+file_img_02 = "./data/underwater/Ancuti03.png"
+file_logo = "./data/mascaras/logo_ehu.png"
+file_base = "./data/mascaras/orto.jpg"
 
 output_folder = Path(__file__).parent.parent.parent / "outs" / Path(__file__).parent.name
 output_folder.mkdir(exist_ok=True, parents=True)
@@ -53,10 +53,10 @@ def do_test02():
         XXXXX
     """
     for i in range(1, 11):
-        file_img = f"../data/underwater/Ancuti{i:02d}.png"
+        file_img = f"./data/underwater/Ancuti{i:02d}.png"
         print("Image: " + file_img)
         img_in = skimage.io.imread(file_img)
-        visualizar_imagen(img_in, "imagen número {}".format(i), block=True)
+        visualizar_imagen(img_in, f"imagen número {i}", block=True)
 
 
 def do_test03():
@@ -78,13 +78,13 @@ def do_test03():
         img_in,
         titulo="imagen original",
         save_figure=True,
-        figure_save_path="../data/out/practica02/fig_test03_in.png",
+        figure_save_path=output_folder / "fig_test03_in.png",
     )
     visualizar_imagen(
         img_out,
         titulo="imagen gris",
         save_figure=True,
-        figure_save_path="../data/out/practica02/fig_test03_out.png",
+        figure_save_path=output_folder / "fig_test03_out.png",
     )
 
 
@@ -108,7 +108,7 @@ def do_test04():
         img_in,
         titulo="imagen original",
         save_figure=True,
-        figure_save_path="../data/out/practica02/fig_test04_in.png",
+        figure_save_path=output_folder / "fig_test04_in.png",
     )
 
     # Con funciones de numpy
@@ -120,19 +120,19 @@ def do_test04():
         np_b,
         titulo="canal r",
         save_figure=True,
-        figure_save_path="../data/out/practica02/fig_test04_r.png",
+        figure_save_path=output_folder / "fig_test04_r.png",
     )
     visualizar_imagen(
         np_g,
         titulo="canal g",
         save_figure=True,
-        figure_save_path="../data/out/practica02/fig_test04_g.png",
+        figure_save_path=output_folder / "fig_test04_g.png",
     )
     visualizar_imagen(
         np_r,
         titulo="canal b",
         save_figure=True,
-        figure_save_path="../data/out/practica02/fig_test04_b.png",
+        figure_save_path=output_folder / "fig_test04_b.png",
     )
 
     # img_in_un_canal_a_cero = TODO:
@@ -158,7 +158,7 @@ def do_test05():
         img_roi,
         titulo="imagen ROI",
         save_figure=True,
-        figure_save_path="../data/out/practica02/fig_test05_roi.png",
+        figure_save_path=output_folder / "fig_test05_roi.png",
     )
 
 
@@ -186,7 +186,7 @@ def do_test06():
         img_out,
         titulo="imagen reconstruida",
         save_figure=True,
-        figure_save_path="../data/out/practica02/fig_test06_recon.png",
+        figure_save_path=output_folder / "fig_test06_recon.png",
     )
 
 
@@ -232,7 +232,7 @@ def do_test08():
         img_suma,
         titulo="imagen suma",
         save_figure=True,
-        figure_save_path="../data/out/practica02/fig_test08_suma.png",
+        figure_save_path=output_folder / "fig_test08_suma.png",
     )
 
     # resta imagenes
@@ -241,7 +241,7 @@ def do_test08():
         img_resta,
         titulo="imagen resta",
         save_figure=True,
-        figure_save_path="../data/out/practica02/fig_test08_resta.png",
+        figure_save_path=output_folder / "fig_test08_resta.png",
     )
 
     # resta imagenes absoluta
@@ -250,7 +250,7 @@ def do_test08():
         img_resta_abs,
         titulo="imagen resta abs",
         save_figure=True,
-        figure_save_path="../data/out/practica02/fig_test08_resta_abs.png",
+        figure_save_path=output_folder / "fig_test08_resta_abs.png",
     )
 
     # Blending
@@ -259,7 +259,7 @@ def do_test08():
         img_blending,
         titulo="imagen blending",
         save_figure=True,
-        figure_save_path="../data/out/practica02/fig_test08_blending.png",
+        figure_save_path=output_folder / "fig_test08_blending.png",
     )
 
 
@@ -315,7 +315,7 @@ def do_test09():
     visualizar_imagen(dst, titulo="suma")
 
     img_base[0:rows, 0:cols] = dst
-    # visualizar_imagen(img_base, titulo='logo_output',save_figure=True,figure_save_path='../data/out/practica02/fig_test09_mascara.png')
+    # visualizar_imagen(img_base, titulo='logo_output',save_figure=True,figure_save_path=output_folder / "fig_test09_mascara.png")
 
 
 if __name__ == "__main__":

@@ -23,6 +23,10 @@ from skimage.transform import rotate
 from src.exercise_01.t01_load_image import visualizar_imagen, visualizar_imagenes
 
 image = data.coins()[50:-50, 50:-50]
+from pathlib import Path
+
+output_folder = Path(__file__).parent.parent.parent / "outs" / Path(__file__).parent.name
+output_folder.mkdir(exist_ok=True, parents=True)
 
 
 def do_test_image_connectivity_coins():

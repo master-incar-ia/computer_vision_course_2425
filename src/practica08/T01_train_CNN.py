@@ -7,6 +7,13 @@ import matplotlib.pyplot as plt
 import tensorflow as tf
 from tensorflow.keras import datasets, layers, models
 
+from pathlib import Path
+
+output_folder = Path(__file__).parent.parent.parent / "outs" / Path(__file__).parent.name
+output_folder.mkdir(exist_ok=True, parents=True)
+
+
+
 (train_images, train_labels), (test_images, test_labels) = datasets.cifar10.load_data()
 
 # Normalize pixel values to be between 0 and 1

@@ -11,9 +11,12 @@ import skimage.io
 from skimage.filters import threshold_local, threshold_otsu
 
 from src.exercise_01.t01_load_image import visualizar_imagen, visualizar_imagenes
+from pathlib import Path
+output_folder = Path(__file__).parent.parent.parent / "outs" / Path(__file__).parent.name
+output_folder.mkdir(exist_ok=True, parents=True)
 
-file_bodegon = "../data/color/bodegon.png"
-file_manzanas = "../data/color/Manzanas.jpg"
+file_bodegon = "./data/color/bodegon.png"
+file_manzanas = "./data/color/Manzanas.jpg"
 
 
 def do_test09():

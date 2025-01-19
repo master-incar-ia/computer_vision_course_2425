@@ -17,6 +17,12 @@ import skimage.io
 import skimage.transform
 import tensorflow as tf
 
+from pathlib import Path
+
+output_folder = Path(__file__).parent.parent.parent / "outs" / Path(__file__).parent.name
+output_folder.mkdir(exist_ok=True, parents=True)
+
+
 if __name__ == "__main__":
     mi_image_file = "avion.jpg"  # buscad un fichero de imagen de alguna de las clases que existen
     model = tf.keras.models.load_model("mi_modelo.h5")

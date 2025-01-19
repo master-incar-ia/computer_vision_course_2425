@@ -11,17 +11,20 @@ import skimage.exposure
 import skimage.io
 
 from src.exercise_01.t01_load_image import visualizar_imagen
+from pathlib import Path
 
-file_histo = "../data/histograma/cerebro_1.jpg"
-file_thres = "../data/histograma/bookpage.jpg"
-file_7seg = "../data/histograma/Segmentos7.jpg"
+file_histo = "./data/histograma/cerebro_1.jpg"
+file_thres = "./data/histograma/bookpage.jpg"
+file_7seg = "./data/histograma/Segmentos7.jpg"
 
-file_mariposa = "../data/morfologicos/mariposa.jpg"
-file_mariposa_noisy = "../data/morfologicos/mariposa_noisy.jpg"
+file_mariposa = "./data/morfologicos/mariposa.jpg"
+file_mariposa_noisy = "./data/morfologicos/mariposa_noisy.jpg"
 
-file_sudoku = "../data/morfologicos/sudoku.jpg"
-file_windows = "../data/morfologicos/windows.jpg"
+file_sudoku = "./data/morfologicos/sudoku.jpg"
+file_windows = "./data/morfologicos/windows.jpg"
 
+output_folder = Path(__file__).parent.parent.parent / "outs" / Path(__file__).parent.name
+output_folder.mkdir(exist_ok=True, parents=True)
 
 def do_test01():
     # Calcular un histograma

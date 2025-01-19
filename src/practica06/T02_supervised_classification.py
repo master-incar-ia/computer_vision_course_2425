@@ -21,10 +21,16 @@ from skimage.segmentation import clear_border
 
 from src.exercise_01.t01_load_image import visualizar_imagen, visualizar_imagenes
 
-file_geometrias = "../data/color/geometrias.png"
-file_geometrias_reescalada = "../data/color/geometrias_rescalada.png"
-file_geometrias_circulo_cuadrado = "../data/color/geometrias_circulos_cuadrados.png"
-file_geometrias_estrellas = "../data/color/geometrias_estrellas.png"
+from pathlib import Path
+
+output_folder = Path(__file__).parent.parent.parent / "outs" / Path(__file__).parent.name
+output_folder.mkdir(exist_ok=True, parents=True)
+
+
+file_geometrias = "./data/color/geometrias.png"
+file_geometrias_reescalada = "./data/color/geometrias_rescalada.png"
+file_geometrias_circulo_cuadrado = "./data/color/geometrias_circulos_cuadrados.png"
+file_geometrias_estrellas = "./data/color/geometrias_estrellas.png"
 
 
 def extract_geometrical_features(image_rgb):

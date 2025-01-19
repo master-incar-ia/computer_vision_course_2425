@@ -1,6 +1,8 @@
 # -*- coding: utf-8 -*-
 __author__ = 106360
 
+from pathlib import Path
+
 import matplotlib.patches as mpatches
 import matplotlib.pyplot as plt
 import pandas as pd
@@ -15,7 +17,9 @@ from skimage.segmentation import clear_border
 
 from src.exercise_01.t01_load_image import visualizar_imagen, visualizar_imagenes
 
-file_geometrias = "../data/color/geometrias.png"
+output_folder = Path(__file__).parent.parent.parent / "outs" / Path(__file__).parent.name
+output_folder.mkdir(exist_ok=True, parents=True)
+file_geometrias = "./data/color/geometrias.png"
 
 
 def do_test_image_figuras():
