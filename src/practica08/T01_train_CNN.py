@@ -3,9 +3,9 @@ __author__ = 106360
 """
 https://colab.research.google.com/github/tensorflow/docs/blob/master/site/en/tutorials/images/cnn.ipynb
 """
+import matplotlib.pyplot as plt
 import tensorflow as tf
 from tensorflow.keras import datasets, layers, models
-import matplotlib.pyplot as plt
 
 (train_images, train_labels), (test_images, test_labels) = datasets.cifar10.load_data()
 
@@ -73,7 +73,9 @@ plt.legend(loc="lower right")
 
 test_loss, test_acc = model.evaluate(test_images, test_labels, verbose=2)
 
-import skimage, skimage.io, numpy
+import numpy
+import skimage
+import skimage.io
 
 mi_image_file = "avion.jpg"  # buscad un fichero de imagen de alguna de las clases que existen
 # model = tf.keras.models.load_model('mi_modelo.h5')

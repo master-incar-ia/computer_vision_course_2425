@@ -6,10 +6,11 @@
 
 import matplotlib.pyplot as plt
 import numpy as np
-import skimage, skimage.io
-from skimage.filters import threshold_otsu, threshold_local
+import skimage
+import skimage.io
+from skimage.filters import threshold_local, threshold_otsu
 
-from exercise_01.T01_cargar_imagen import visualizar_imagen, visualizar_imagenes
+from src.exercise_01.t01_load_image import visualizar_imagen, visualizar_imagenes
 
 file_bodegon = "../data/color/bodegon.png"
 file_manzanas = "../data/color/Manzanas.jpg"

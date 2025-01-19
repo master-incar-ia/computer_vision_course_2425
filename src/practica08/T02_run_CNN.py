@@ -11,9 +11,11 @@ Leed el documento asociado sobre deep learning (o la charla de Aitor Álvarez) y
         - Llamar a la función predict del modelo de keras para predecir.
 
 """
-import tensorflow as tf
-import skimage, skimage.io, skimage.transform
 import numpy
+import skimage
+import skimage.io
+import skimage.transform
+import tensorflow as tf
 
 if __name__ == "__main__":
     mi_image_file = "avion.jpg"  # buscad un fichero de imagen de alguna de las clases que existen

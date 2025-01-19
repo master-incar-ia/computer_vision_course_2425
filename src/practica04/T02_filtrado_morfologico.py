@@ -3,10 +3,11 @@ __author__ = 106360
 
 import cv2
 import numpy as np
-from matplotlib import pyplot as plt
-import skimage.morphology
-from exercise_01.T01_cargar_imagen import visualizar_imagenes, visualizar_imagen
 import skimage
+import skimage.morphology
+from matplotlib import pyplot as plt
+
+from src.exercise_01.t01_load_image import visualizar_imagen, visualizar_imagenes
 
 file_histo = "../data/histograma/cerebro_1.jpg"
 file_thres = "../data/histograma/bookpage.jpg"

@@ -6,8 +6,11 @@
 
 import matplotlib.pyplot as plt
 import numpy as np
-import skimage, skimage.io, skimage.exposure
-from exercise_01.T01_cargar_imagen import visualizar_imagen
+import skimage
+import skimage.exposure
+import skimage.io
+
+from src.exercise_01.t01_load_image import visualizar_imagen
 
 file_histo = "../data/histograma/cerebro_1.jpg"
 file_thres = "../data/histograma/bookpage.jpg"

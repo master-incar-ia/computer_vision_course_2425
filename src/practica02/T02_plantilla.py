@@ -4,7 +4,7 @@ __author__ = "mi_nombre_aqui"
 import matplotlib.pyplot as plt
 import numpy as np
 import skimage, skimage.io
-from exercise_01.T01_cargar_imagen import visualizar_imagen
+from src.exercise_01.t01_load_image import visualizar_imagen
 
 file_img_01 = "../data/color/barrio_sesamo.jpg"
 file_img_02 = "../data/color/espinete.jpg"

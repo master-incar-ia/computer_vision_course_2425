@@ -6,16 +6,18 @@ from sklearn.cluster import KMeans
 __author__ = 106360
 
 import matplotlib.patches as mpatches
-from skimage import data
-from skimage.filters import threshold_otsu
-from skimage.segmentation import clear_border
-from skimage.morphology import closing, square
-from skimage.color import label2rgb
 import matplotlib.pyplot as plt
-from skimage.measure import label, regionprops
-from exercise_01.T01_cargar_imagen import visualizar_imagenes, visualizar_imagen
-import skimage, skimage.io
 import pandas as pd
+import skimage
+import skimage.io
+from skimage import data
+from skimage.color import label2rgb
+from skimage.filters import threshold_otsu
+from skimage.measure import label, regionprops
+from skimage.morphology import closing, square
+from skimage.segmentation import clear_border
+
+from src.exercise_01.t01_load_image import visualizar_imagen, visualizar_imagenes
 
 file_geometrias = "../data/color/geometrias.png"
 

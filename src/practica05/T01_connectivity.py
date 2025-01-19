@@ -5,24 +5,22 @@ import matplotlib
 
 matplotlib.use("Tkagg")
 
-import matplotlib.pyplot as plt
-import matplotlib.patches as mpatches
-import skimage
-from skimage import data
-from skimage.filters import threshold_otsu
-from skimage.segmentation import clear_border
-from skimage.measure import label, regionprops
-from skimage.morphology import closing, square, disk, opening, erosion, dilation
-from skimage.color import label2rgb
 import math
+
+import matplotlib.patches as mpatches
 import matplotlib.pyplot as plt
 import numpy as np
-
+import skimage
+from skimage import data
+from skimage.color import label2rgb
 from skimage.draw import ellipse
+from skimage.filters import threshold_otsu
 from skimage.measure import label, regionprops
+from skimage.morphology import closing, dilation, disk, erosion, opening, square
+from skimage.segmentation import clear_border
 from skimage.transform import rotate
 
-from exercise_01.T01_cargar_imagen import visualizar_imagen, visualizar_imagenes
+from src.exercise_01.t01_load_image import visualizar_imagen, visualizar_imagenes
 
 image = data.coins()[50:-50, 50:-50]
 

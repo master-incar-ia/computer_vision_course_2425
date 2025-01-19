@@ -6,12 +6,12 @@ from skimage.color import rgb2lab
 
 __author__ = "106360"
 
-import skimage, skimage.io
 import matplotlib.pyplot as plt
 import numpy
-import sklearn
+import skimage
 import skimage.feature as ft
-import numpy
+import skimage.io
+import sklearn
 
 
 def GetDescriptorLBPUniform(gray_image, radius, n_points, n_bins):
@@ -105,8 +105,8 @@ def segment_unsupervised(image, numclasses, normalize_data):
 
 
 def generate_supervised_model(image_descriptor_real_size, selected_points, y_class, normalize_data):
-    from sklearn.preprocessing import StandardScaler
     from sklearn.naive_bayes import GaussianNB
+    from sklearn.preprocessing import StandardScaler
 
     X = numpy.zeros((len(selected_points), image_descriptor_real_size.shape[2]))
     for i, point in enumerate(selected_points):

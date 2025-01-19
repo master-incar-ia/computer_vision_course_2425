@@ -1,16 +1,16 @@
 # -*- coding: utf-8 -*-
-import skimage
-
-from exercise_01.T01_cargar_imagen import visualizar_imagenes, visualizar_imagen
 import scipy.ndimage
+import skimage
 import skimage.filters
+
+from src.exercise_01.t01_load_image import visualizar_imagen, visualizar_imagenes
 
 __author__ = 106360
 
 import cv2
 import numpy as np
-from matplotlib import pyplot as plt
 import scipy
+from matplotlib import pyplot as plt
 
 file_histo = "../data/histograma/cerebro_1.jpg"
 file_thres = "../data/histograma/bookpage.jpg"

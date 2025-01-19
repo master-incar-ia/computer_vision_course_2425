@@ -1,10 +1,14 @@
 # -*- coding: utf-8 -*-
 __author__ = "mi_nombre_aqui"
 
+from pathlib import Path
+
 import matplotlib.pyplot as plt
 import numpy as np
-import skimage, skimage.io
-from exercise_01.T01_cargar_imagen import visualizar_imagen
+import skimage
+import skimage.io
+
+from src.exercise_01.t01_load_image import visualizar_imagen
 
 """
 TODO: Elige una imagen para usar
@@ -14,6 +18,9 @@ file_img_01 = "../data/underwater/Ancuti01.png"
 file_img_02 = "../data/underwater/Ancuti03.png"
 file_logo = "../data/mascaras/logo_ehu.png"
 file_base = "../data/mascaras/orto.jpg"
+
+output_folder = Path(__file__).parent.parent.parent / "outs" / Path(__file__).parent.name
+output_folder.mkdir(exist_ok=True, parents=True)
 
 
 def do_test01():
@@ -46,10 +53,10 @@ def do_test02():
         XXXXX
     """
     for i in range(1, 11):
-        file_img = "../data/underwater/Ancuti{0:02d}.png".format(i)
+        file_img = f"../data/underwater/Ancuti{i:02d}.png"
         print("Image: " + file_img)
         img_in = skimage.io.imread(file_img)
-        visualizar_imagen(img_in, "imagen número %d" % i, block=True)
+        visualizar_imagen(img_in, "imagen número {}".format(i), block=True)
 
 
 def do_test03():
