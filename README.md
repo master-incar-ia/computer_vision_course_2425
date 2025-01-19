@@ -244,63 +244,8 @@ git push
 ```
 
 
-To see if the code works, go to the "run and debug" section in VS Code and start running the exercise_01.dataset code
+To see if the code works, go to the "run and debug" section in VS Code and start running the exercise_01.t01_load_image code
  
-## Exercises:
-
-### General guideline for the exercises
-
-For each exercise, you have two tasks:
-1. To make the exercise work.
-2. To convince us that you have understood what each exercise is about and how is done.
-
-Structure of the exercises:
-Each exercise is divided in the following steps according to the concepts we have seen in theory classes.
-- Objective
-- Task Formalization
-- Evaluation metrics
-- Data considerations
-- Model considerations
-- Training
-- Evaluation
-- Design feedback loops
-
-Additionally, each exercise may have some questions for you to answer.
-
-Guideline:
-Don't worry, you won't start each exercise from a blank page. For the first exercise we are poviding a 90% correct template and code. 
-
-Your task will be to debug the program so that it works. Wherever you consider appropriate, you may add additional explanations to the already quite complete readme file to show us your understanding of the exercise.
-
-The following exercises (from exercise 2 onwards) you will be progresively building up from the previous exercise.
-
-
-### Basic concepts. Learn a linear function with PyTorch
-- [Exercise 1](src/exercise_01/readme_exercise.md)
-
-### Basic concepts. Learn an unknown function with PyTorch
-- [Exercise 2](src/exercise_02/readme_exercise.md)
-
-### Basic concepts. Learn an unknown function with PyTorch
-- [Exercise 3](src/exercise_03/readme_exercise.md)
-
-### Create a simple model (with CNNs) for image classification with PyTorch
-- [Exercise 4](src/exercise_04/readme_exercise.md)
-
-### Create a simple model (with Fully connected layers) for image classification with PyTorch
-- [Exercise 5](src/exercise_05/readme_exercise.md)
-
-### Create a model that can classify defibrillation from ECG (Electrocardiogram)
-- [Exercise 6](src/exercise_06/readme_exercise.md)
-
-### Create a model that can classify defibrillation from ECG with LSTM and GRU (Electrocardiogram)
-- [Exercise 7](src/exercise_07/readme_exercise.md)
-
-### Create a encoder-decoder architecture for image compression and classification
-- [Exercise 8](src/exercise_08/readme_exercise.md)
-
-### Create a variational deep autoencoder
-- [Exercise 9](src/exercise_09/readme_exercise.md)
 
 
 
