@@ -5,7 +5,10 @@ readme = "README.md"
 requires-python = ">=3.10"
 version = "0.0.2"
 
-dependencies = [
+dependencies = []
+
+[project.optional-dependencies]
+dev = [
     "numpy>=1.21.2",
     "torch",
     "torchvision",

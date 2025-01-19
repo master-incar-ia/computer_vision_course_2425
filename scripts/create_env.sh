@@ -10,4 +10,4 @@ source env/bin/activate
 #update pip
 python3 -m pip install --upgrade pip
 #install requirements
-python3 -m pip install -e .
+python3 -m pip install -e .[dev]
