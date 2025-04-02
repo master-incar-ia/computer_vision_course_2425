@@ -2,12 +2,12 @@
 # deactivate old environment
 # source deactivate
 # delete old environment
-rm -rf env
+rm env
 #Create virtual environment
-python3 -m venv env 
+python -m venv env 
 #Activate environment
 source env/bin/activate
 #update pip
-python3 -m pip install --upgrade pip
+python -m pip install --upgrade pip
 #install requirements
-python3 -m pip install -e .[dev]
+python -m pip install -e .[dev]
