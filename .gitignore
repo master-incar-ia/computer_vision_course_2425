@@ -163,7 +163,7 @@ cython_debug/
 
 # IDEs 
 .idea/
-.vscode/
+# .vscode/
 
 # Custom Files
 outs/

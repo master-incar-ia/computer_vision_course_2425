@@ -23,4 +23,9 @@ if __name__ == "__main__":
 
     file_path = "./data/underwater/Ancuti01.png"
     imagen_rgb = cargar_imagen(file_path)
-    visualizar_imagen(imagen_rgb, titulo="Artzai", save_figure=True, figure_save_path=output_folder / "t02_image_out_exercise_02.png")
+    visualizar_imagen(
+        imagen_rgb,
+        titulo="Artzai",
+        save_figure=True,
+        figure_save_path=output_folder / "t02_image_out_exercise_02.png",
+    )

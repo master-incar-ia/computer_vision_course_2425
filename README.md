@@ -70,7 +70,7 @@ https://code.visualstudio.com/download or install it from the Microsoft Store
     ```bash
     https://www.python.org/downloads/
     ```
-    - Git LFS:
+    - Git LFS (Not neccesary):
     ```bash
     https://github.com/git-lfs/git-lfs/releases
     ```
@@ -106,10 +106,7 @@ https://code.visualstudio.com/download or install it from the Microsoft Store
 
 3) Create GitHub account
     - Go to github and create an account.
-    - Send your username to the course coordinator to be added to the repository.
-    - If not using github classroom:
-        - Fork the repository to your account (you will create a new repository with private visibility. Your group will work on the same repository).
-        - Give access to the course coordinator to your repository.
+    - Link you user account with your github classroom to be added to the repository.
     - If using github classroom:
         - Accept the invitation to the classroom
 
@@ -151,7 +148,7 @@ https://code.visualstudio.com/download or install it from the Microsoft Store
     - Open the command palette (Ctrl+Shift+P)
     - Write "Git: Clone"
     - select "clone from github". This will help you clone the repository without the need of ssh keys
-    - Write the url of the repository: https://github.com/your-username/deep_learning_course_torch
+    - Write the url of the repository: https://github.com/your_group/deep_learning_course_torch
     - Select the folder where you want to clone the repository
 3) Open the repository
     - Open the command palette (Ctrl+Shift+P)
@@ -187,7 +184,7 @@ source env/bin/activate
 .\env\Scripts\activate
 ```
 
-4) Add output folder to git LFS
+4) Add output folder to git LFS (not required)
 
     We need to add the output folder to git LFS (git storage for large binary files) to avoid pushing the output folder to GitHub.
 
@@ -212,7 +209,7 @@ make train
 - Windows:
 In windows make does not work. Execute the following command:
 ```bash
-python -m src.exercise_01.train
+python3 -m src.exercise_01.t00_welcome2python
 ```
 
 
