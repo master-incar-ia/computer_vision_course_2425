@@ -1,6 +1,6 @@
 [project]
 name = "computer_vision_class"
-description = "A cool introductory practice to learn the basics for deep learning"
+description = "A cool introductory practice to learn the basics for classical computer vision"
 readme = "README.md"
 requires-python = ">=3.10"
 version = "0.0.2"
