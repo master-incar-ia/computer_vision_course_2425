@@ -1,6 +1,5 @@
-# deep_learning_course_torch course
+# Computer Vision Course
 Developed by [Artzai Picon](https://github.com/samtzai)
-Reviewed and corrected by [Urtats Etxegarai](https://github.com/statru)
 
 ## Installation in Linux or Linux over Windows (WSL):
 
