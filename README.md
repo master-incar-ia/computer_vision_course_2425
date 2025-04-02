@@ -1,7 +1,11 @@
 # Computer Vision Course
 Developed by [Artzai Picon](https://github.com/samtzai)
 
-## Installation in Linux or Linux over Windows (WSL):
+
+You can choose if you want to install the code over Windows or over Linux
+
+
+## LINUX: Installation in Linux or Linux over Windows (WSL):
 
 1) Install Windows WSL (If you are on Windows)
 https://learn.microsoft.com/en-us/windows/wsl/install
@@ -57,9 +61,9 @@ https://learn.microsoft.com/en-us/windows/wsl/install
 
 https://code.visualstudio.com/download or install it from the Microsoft Store
 
-## Installation in Windows (Not in WSL):
+## WINDOWS: Installation in Windows (Not in WSL):
 
-1) Install python3 from the Microsoft Store
+1) Install python3 from the Microsoft Store (python 3.12)
 2) Install VSCode from the Microsoft Store
 3) Install the following software:
     - Git: 
@@ -183,7 +187,7 @@ source env/bin/activate
 ```bash
 .\env\Scripts\activate
 ```
-
+<!-- 
 4) Add output folder to git LFS (not required)
 
     We need to add the output folder to git LFS (git storage for large binary files) to avoid pushing the output folder to GitHub.
@@ -197,28 +201,23 @@ source env/bin/activate
 	@echo "Updating output directory..."
 	git lfs track outs/**
 	git add .gitattributes
-    ```
+    ``` -->
 
 
 
 4) see that everything works by running the following command:
-- Linux or Windows(WSL):
-```bash
-make train
-``` 
-- Windows:
-In windows make does not work. Execute the following command:
+
+Execute the following command:
 ```bash
 python3 -m src.exercise_01.t00_welcome2python
 ```
-
 
 
 ## Debug the code in VS Code
 
 1) Open the repository in VS Code
 2) Open the "run and debug" section
-3) Select the configuration you want to run (e.g. "Python: Current File" or "exercise_01.dataset")
+3) Select the configuration you want to run (e.g. "Python: Current Module" or "src.exercise_01.t00_welcome2python")
 4) Start debugging
 
 Note: In windows, if script running rights are not allowed, change script policy in Powershell with admin rights
@@ -238,7 +237,6 @@ git add .
 git commit -m "commit message"
 git push
 ```
-
 
 To see if the code works, go to the "run and debug" section in VS Code and start running the exercise_01.t01_load_image code
  
