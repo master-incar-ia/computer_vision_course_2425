@@ -85,7 +85,7 @@ Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy RemoteSigned
     - Assure that the environment is activated
         execute: .\.venv\Scripts\activate
     - Install the modules
-        python3 -m pip install -e .
+        pip install -e .
 5) see that everything works by running the following command:
 
 Execute the following command:
