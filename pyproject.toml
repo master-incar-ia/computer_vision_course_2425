@@ -5,16 +5,13 @@ readme = "README.md"
 requires-python = ">=3.10"
 version = "0.0.2"
 
-dependencies = []
-
-[project.optional-dependencies]
-dev = [
-    "numpy>=1.21.2",
-    "torch",
-    "torchvision",
-    "opencv-python",
+dependencies = [
+        "numpy>=1.21.2",
+    # "torch",
+    # "torchvision",
+    # "opencv-python",
     "python-dotenv",
-    "pytorch_lightning",
+    # "pytorch_lightning",
     "pandas",
     "scikit-learn",
     "matplotlib",
@@ -26,6 +23,8 @@ dev = [
     "ruff",
     "tensorflow"
 ]
+
+
 
 [tool.ruff]
 line-length = 100
