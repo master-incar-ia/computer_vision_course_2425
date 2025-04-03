@@ -3,18 +3,15 @@ name = "computer_vision_class"
 description = "A cool introductory practice to learn the basics for classical computer vision"
 readme = "README.md"
 requires-python = ">=3.10"
-version = "0.0.2"
+version = "0.0.3"
 
-dependencies = []
-
-[project.optional-dependencies]
-dev = [
+dependencies = [
     "numpy>=1.21.2",
-    "torch",
-    "torchvision",
-    "opencv-python",
+    # "torch",
+    # "torchvision",
+    # "opencv-python",
     "python-dotenv",
-    "pytorch_lightning",
+    # "pytorch_lightning",
     "pandas",
     "scikit-learn",
     "matplotlib",
@@ -26,6 +23,8 @@ dev = [
     "ruff",
     "tensorflow"
 ]
+
+
 
 [tool.ruff]
 line-length = 100
